@@ -23,4 +23,5 @@ ServerEvents.recipes(event =>{
 //Tag ethylene with a create tag that makes it be fuel
 ServerEvents.tags("fluid",event =>{
     event.add("forge:ethylene",['createdelight:ethylene_fluid']);
+    // event.add("forge:lubricants",['createdelight:lubricating_oil']);
 })
