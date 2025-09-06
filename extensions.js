@@ -2,9 +2,12 @@ ServerEvents.recipes(event =>{
     const create = event.recipes.create
     const createv = event.recipes.vintageimprovements
 
-    //Add "ethylene_fluid" As a fuel
+    //Add "ethylene_fluid" As a kind of fuel
     Item.of('createdelight:ethylene_fluid_bucket').item.craftingRemainder = Item.of('minecraft:bucket').item;
-    Item.getItem('createdelight:ethylene_fluid_bucket').burnTime=20*280;//可燃烧28个物品
+    Item.getItem('createdelight:ethylene_fluid_bucket').burnTime=20*280;
+    //Add lubricats As a kind of fuel
+    Item.of('createdelight:lubricating_oil_bucket').item.craftingRemainder = Item.of('minecraft:bucket').item;
+    Item.getItem('createdelight:lubricating_oil_bucket').burnTime=200*50;
     //Add Indirect Hydration Process for Ethanol production
     createv.pressurizing(
         Fluid.of("createdieselgenerators:ethanol",200),
