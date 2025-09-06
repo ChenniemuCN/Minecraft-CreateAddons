@@ -19,3 +19,8 @@ ServerEvents.recipes(event =>{
         .heated()
         .id("createdelight:pressurizing/ethanol_from_ethylene_beta")
 })
+
+//Tag ethylene with a create tag that makes it be fuel
+ServerEvents.tags("fluid",event =>{
+    event.add("forge:ethylene",['createdelight:ethylene_fluid']);
+})
