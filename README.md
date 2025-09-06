@@ -17,4 +17,4 @@ Adjustments as follow:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;i) Add "ethylene_fluid" As a kind of fuel<br>
 &nbsp;&nbsp;&nbsp;&nbsp;ii) Add Indirect Hydration Process for Ethanol production<br>
 <br>
-3 : I tried to add ethene_fluid as a kind of fuel available for the engine.But I failed.But only at most now.:(
+3 : Add ethene_fluid as a kind of fuel available for engines.
